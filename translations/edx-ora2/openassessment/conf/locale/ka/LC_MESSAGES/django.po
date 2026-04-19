@@ -6,6 +6,7 @@
 # 
 # Translators:
 # Omar Al-Ithawi <i@omardo.com>, 2026
+# Lasha Kokilashvili, 2026
 # 
 msgid ""
 msgstr ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-30 00:45+0000\n"
 "PO-Revision-Date: 2025-11-17 07:23+0000\n"
-"Last-Translator: Omar Al-Ithawi <i@omardo.com>, 2026\n"
+"Last-Translator: Lasha Kokilashvili, 2026\n"
 "Language-Team: Georgian (https://app.transifex.com/open-edx/teams/6205/ka/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,6 +40,15 @@ msgstr ""
 msgid "Example {example_number} has a validation error: {error}"
 msgstr "მაგალითი {example_number} შეიცავს უზუსტობას: {error}"
 
+#: assessment/api/student_training.py:217
+#, python-brace-format
+msgid ""
+"Example {example_number} has an invalid option for \"{criterion_name}\": "
+"\"{option_name}\""
+msgstr ""
+"მაგალითი {example_number} აქვს არასწორი ვარიანტი \"{criterion_name}\": "
+"\"{option_name}\""
+
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
@@ -53,18 +63,110 @@ msgstr "მაგალითს {example_number} აკლია ვარი�
 msgid "Peer"
 msgstr "კურსელი"
 
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "Self"
+
 #: assessment/score_type_constants.py:23
 msgid "Staff"
 msgstr "პერსონალი"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "უცნობი"
+
+#: data.py:584
+#, python-brace-format
+msgid "Criterion {number}: {label}"
+msgstr "კრიტერიუმი {number}: {label}"
+
+#: data.py:586
+#, python-brace-format
+msgid "Points {number}"
+msgstr "ქულები {number}"
+
+#: data.py:587
+#, python-brace-format
+msgid "Median Score {number}"
+msgstr "საშუალო ქულა {number}"
+
+#: data.py:588
+#, python-brace-format
+msgid "Feedback {number}"
+msgstr "უკუკავშირი {number}"
 
 #: data.py:917
 msgid "Item ID"
 msgstr "ერთეულის იდენტიფიკატორი"
 
+#: data.py:918
+msgid "Submission ID"
+msgstr "ახალი შენატანის იდენტიფიკატორი"
+
+#: data.py:930
+msgid "Anonymized Student ID"
+msgstr "ანონიმური სტუდენტის ID"
+
+#: data.py:961
+msgid "Assessment ID"
+msgstr "შეფასების ID"
+
+#: data.py:962
+msgid "Assessment Scored Date"
+msgstr "შეფასების ქულების თარიღი"
+
+#: data.py:963
+msgid "Assessment Scored Time"
+msgstr "შეფასების შეფასების დრო"
+
+#: data.py:964
+msgid "Assessment Type"
+msgstr "შეფასების ტიპი"
+
+#: data.py:965
+msgid "Anonymous Scorer Id"
+msgstr "ანონიმური ბომბარდირის ID"
+
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
 msgstr "მთლიანი უკუკავშირი"
+
+#: data.py:968
+msgid "Assessment Score Earned"
+msgstr "მიღებული შეფასების ქულა"
+
+#: data.py:969
+msgid "Assessment Scored At"
+msgstr "შეფასება"
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "თარიღი/დრო: საბოლოო ქულა"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "მიღებული საბოლოო ქულა"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "შესაძლებელია საბოლოო ანგარიში"
+
+#: data.py:973
+msgid "Feedback Statements Selected"
+msgstr "შერჩეული უკუკავშირის განცხადებები"
+
+#: data.py:974
+msgid "Feedback on Assessment"
+msgstr "გამოხმაურება შეფასების შესახებ"
+
+#: data.py:976
+msgid "Response Files"
+msgstr "პასუხის ფაილები"
+
+#: data.py:1367
+msgid "No description provided."
+msgstr "აღწერის გარეშე."
 
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
 #: xblock/studio_mixin.py:58
@@ -79,6 +181,18 @@ msgstr "შენახვა"
 msgid "Cancel"
 msgstr "გაუქმება"
 
+#: templates/legacy/edit/oa_edit_assessment_steps.html:6
+msgid ""
+"Open Response Assessments allow you to configure single or multiple steps in"
+" a rubric based open response assessment sequence. The steps available below"
+" can be enabled, disable, and ordered for a flexible set of pedagogical "
+"needs."
+msgstr ""
+"ღია პასუხის შეფასებები საშუალებას გაძლევთ დააკონფიგურიროთ ერთი ან რამდენიმე "
+"ნაბიჯი რუბრიკაზე დაფუძნებულ ღია პასუხის შეფასების თანმიმდევრობაში. ქვემოთ "
+"არსებული ნაბიჯები შეიძლება ჩართული იყოს, გამორთოთ და შეუკვეთოთ პედაგოგიური "
+"საჭიროებების მოქნილი ნაკრებისთვის."
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
 msgstr "სახელი"
@@ -87,6 +201,10 @@ msgstr "სახელი"
 msgid "The display name for this component."
 msgstr "კომპონენტის ხილვადი სახელი."
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:12
+msgid "Text Response"
+msgstr "ტექსტური პასუხი"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:20
 msgid ""
 "Specify whether learners must include a text based response to this "
@@ -94,9 +212,33 @@ msgid ""
 msgstr ""
 "მიუთითეთ ტექსტური ფორმითაც უნდა უპასუხონ თუ არა სტუდენტებმა ამ საკითხს."
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:25
+msgid "Response Editor"
+msgstr "პასუხის რედაქტორი"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:33
+msgid ""
+"Select which editor learners will use to include a text based response to "
+"this problem's prompt."
+msgstr ""
+"აირჩიეთ რომელ რედაქტორს გამოიყენებენ მოსწავლეები ამ პრობლემის მოთხოვნაზე "
+"ტექსტზე დაფუძნებული პასუხის დასამატებლად."
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
 msgstr "პასუხი ფაილის ატვირთვის ფორმით"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:46
+msgid ""
+"Specify whether learners are able to upload files as a part of their "
+"response."
+msgstr ""
+"მიუთითეთ, შეუძლიათ თუ არა მოსწავლეებს ფაილების ატვირთვა, როგორც მათი პასუხის"
+" ნაწილი."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:50
+msgid "Allow Multiple Files"
+msgstr "მრავალი ფაილის დაშვება"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -116,9 +258,23 @@ msgstr "არა"
 msgid "True"
 msgstr "დიახ"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:56
+msgid ""
+"Specify whether learners can upload more than one file. This has no effect "
+"if File Uploads Response is set to None. This is automatically set to True "
+"for Team Assignments. "
+msgstr ""
+"მიუთითეთ, შეუძლიათ თუ არა მოსწავლეებს ერთზე მეტი ფაილის ატვირთვა. ამას "
+"არანაირი ეფექტი არ ექნება, თუ ფაილის ატვირთვის პასუხი დაყენებულია არცერთზე. "
+"ეს ავტომატურად დაყენებულია True გუნდის დავალებებისთვის. "
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
 msgstr "ასატვირთი ფაილის ფორმატები"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:60
+msgid "PDF or Image Files"
+msgstr "PDF ან Image ფაილები"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:61
 msgid "Image Files"
@@ -127,6 +283,13 @@ msgstr "სურათის ტიპის ფაილები"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
 msgstr "ფაილის დამატებითი ტიპები"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:66
+msgid ""
+"Specify whether learners can submit files along with their text responses."
+msgstr ""
+"მიუთითეთ, შეუძლიათ თუ არა მოსწავლეებს ფაილების გაგზავნა ტექსტურ პასუხებთან "
+"ერთად."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
@@ -139,6 +302,105 @@ msgid ""
 msgstr ""
 "მიუთითეთ და მძიმეებით გამოყავით ფაილების გაფართოებები, რომ მსმენელებმა მათი "
 "ატვირთვა შეძლონ. მაგალითად : pdf,doc,docx."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:84
+msgid ""
+"To add more file extensions, select Custom File Types and enter the full "
+"list of acceptable file extensions to be included."
+msgstr ""
+"ფაილის მეტი გაფართოების დასამატებლად აირჩიეთ მორგებული ფაილის ტიპები და "
+"შეიყვანეთ მისაღები ფაილის გაფართოებების სრული სია."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:91
+msgid "Allow LaTeX Responses"
+msgstr "LaTeX პასუხების დაშვება"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:97
+msgid "Specify whether learners can write LaTeX formatted strings"
+msgstr ""
+"მიუთითეთ, შეუძლიათ თუ არა მოსწავლეებს LaTeX ფორმატირებული სტრიქონების დაწერა"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:102
+#: templates/legacy/leaderboard/oa_leaderboard_show.html:8
+#: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
+msgid "Top Responses"
+msgstr "ყველაზე გამოხმაურებები"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:104
+msgid " (Disabled)"
+msgstr " (გამორთულია)"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:117
+msgid ""
+"Specify the number of top scoring responses to display after the learner has"
+" submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
+"Top Responses section does not appear to learners."
+msgstr ""
+"მიუთითეთ ყველაზე მაღალი ქულების პასუხების რაოდენობა, რომლებიც უნდა აჩვენოთ "
+"მოსწავლის პასუხის წარდგენის შემდეგ. მოქმედი ნომრები 0-დან 99-მდეა. თუ რიცხვი"
+" არის 0, საუკეთესო პასუხების განყოფილება არ ჩანს მოსწავლეებისთვის."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:122
+msgid "When Teams Enabled is set to true, Top Responses will be disabled."
+msgstr ""
+"როდესაც ჩართული გუნდები დაყენებულია true-ზე, საუკეთესო პასუხები გამორთულია."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:129
+msgid "Teams Enabled"
+msgstr "გუნდები ჩართულია"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:136
+msgid "Specify whether team submissions are allowed for this response."
+msgstr "მიუთითეთ, ნებადართულია თუ არა გუნდის გამოგზავნა ამ პასუხისთვის."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:141
+msgid "Select Team-Set"
+msgstr "აირჩიეთ გუნდის ნაკრები"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:155
+msgid "Show Rubric During Response"
+msgstr "რუბრიკის ჩვენება პასუხის დროს"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:162
+msgid ""
+"Specify whether learners can see the rubric while they are working on their "
+"response."
+msgstr ""
+"მიუთითეთ, შეუძლიათ თუ არა მოსწავლეებს ნახონ რუბრიკა პასუხზე მუშაობის დროს."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "მოსწავლეთა ხელახალი წარდგენის უფლება"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"დააყენეთ TRUE-ზე, რათა მოსწავლეებს საშუალება მისცეს ხელახლა წარადგინონ "
+"შეუფასებელი ნამუშევარი. დააყენეთ FALSE-ზე, თუ ხელახალი წარდგენა დაუშვებელია."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "ხელახალი წარდგენის საშეღავათო პერიოდი"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"მიუთითეთ მაქსიმალური ვადა, რომლის განმავლობაშიც ნებადართულია ხელახალი "
+"წარდგენა. თუ ცარიელი დარჩება, მოსწავლეებს შეეძლებათ აღადგინონ თავიანთი "
+"წარდგენა, სანამ ის არ არის შეფასებული. საშეღავათო პერიოდი იწყება მას შემდეგ,"
+" რაც მოსწავლე წარადგინებს პასუხს."
+
+#: templates/legacy/edit/oa_edit_criterion.html:6
+#: templates/legacy/staff_area/oa_student_info.html:122
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
+msgid "Criterion"
+msgstr "კრიტერიუმი"
 
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
@@ -155,6 +417,10 @@ msgstr "წაშლა"
 msgid "Criterion Name"
 msgstr "კრიტერიუმის სახელი"
 
+#: templates/legacy/edit/oa_edit_criterion.html:29
+msgid "Criterion Prompt"
+msgstr "კრიტერიუმის მოთხოვნა"
+
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
 msgstr "ვარიანტის დამატება"
@@ -163,12 +429,28 @@ msgstr "ვარიანტის დამატება"
 msgid "Feedback for This Criterion"
 msgstr "უკუკავშირი ამ კრიტერიუმისათვის"
 
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
+msgid "Optional"
+msgstr "არასავალდებულო"
+
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
 #: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "სავალდებულო"
+
+#: templates/legacy/edit/oa_edit_criterion.html:61
+msgid ""
+"Select one of the options above. This describes whether or not the reviewer "
+"will have to provide criterion feedback."
+msgstr ""
+"აირჩიეთ ზემოთ მოცემული ერთ-ერთი ვარიანტი. ეს აღწერს, მოუწევს თუ არა "
+"რეცენზენტს კრიტერიუმების გამოხმაურება."
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:3
+msgid "Open Response Assessment"
+msgstr "ღია პასუხის შეფასება"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
@@ -179,17 +461,135 @@ msgstr "მინიშნება"
 msgid "Rubric"
 msgstr "შეფასება"
 
+#: templates/legacy/edit/oa_edit_header_and_validation.html:22
+msgid "Schedule"
+msgstr "განრიგი"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
+msgid "Assessment steps"
+msgstr "შეფასების ნაბიჯები"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:36
+msgid "Settings"
+msgstr "პარამეტრები"
+
+#: templates/legacy/edit/oa_edit_option.html:5
+msgid "Option"
+msgstr "მორგება"
+
 #: templates/legacy/edit/oa_edit_option.html:16
 msgid "Option Name"
 msgstr " ვარიანტის სახელი"
+
+#: templates/legacy/edit/oa_edit_option.html:29
+msgid "Option Points"
+msgstr "ოფციონალური ქულები"
+
+#: templates/legacy/edit/oa_edit_option.html:42
+msgid "Option Explanation"
+msgstr "ვარიანტის ახსნა"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:10
+msgid "Step: Peer Assessment"
+msgstr "ნაბიჯი: თანატოლების შეფასება"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:15
+msgid ""
+"Peer Assessment allows students to provide feedback to other students and "
+"also receive feedback from others in their final grade. Often, though not "
+"always, this step is preceded by Self Assessment or Learner Training steps."
+msgstr ""
+"თანატოლების შეფასება საშუალებას აძლევს სტუდენტებს მიაწოდონ უკუკავშირი სხვა "
+"მოსწავლეებს და ასევე მიიღონ უკუკავშირი სხვებისგან საბოლოო კლასში. ხშირად, "
+"თუმცა არა ყოველთვის, ამ ნაბიჯს წინ უძღვის თვითშეფასება ან მოსწავლის "
+"ტრენინგის ნაბიჯები."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:18
+msgid ""
+"Configuration: For this step to be configured you must specify the number of"
+" peer reviews a student will be assessed with, and the number of peer a "
+"student must grade. Additional options can be specified."
+msgstr ""
+"კონფიგურაცია: ამ ნაბიჯის კონფიგურაციისთვის თქვენ უნდა მიუთითოთ თანატოლების "
+"მიმოხილვების რაოდენობა, რომლითაც შეფასდება სტუდენტი და თანატოლების "
+"რაოდენობა, რომელიც სტუდენტმა უნდა შეაფასოს. დამატებითი პარამეტრები შეიძლება "
+"მიეთითოს."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:23
+msgid "View Options & Configuration"
+msgstr "პარამეტრების და კონფიგურაციის ნახვა"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
 msgstr "შეფასება აუცილებელია"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:32
+msgid ""
+"Specify the number of peer assessments that each learner must complete. "
+"Valid numbers are 1 to 99."
+msgstr ""
+"მიუთითეთ ურთიერთშეფასებისას ჯგუფის თითოეული წევრის მიერ შესაფასებელი "
+"ნამუშევრების რაოდენობა. შესაძლებელია მიუთითოთ 1 -დან 99 -მდე. "
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
 msgstr "შემფასებელი:"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:39
+msgid ""
+"Specify the number of learners that each response must be assessed by. Valid"
+" numbers are 1 to 99."
+msgstr ""
+"მიუთითეთ მსმენელეთა რაოდენობა, რომლებმაც უნდა შეაფასონ თითოეული პასუხი. "
+"შესაძლებელია მიუთითოთ 1 -დან 99 -მდე"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:43
+msgid "Enable Flexible Peer Grade Averaging"
+msgstr "ჩართეთ მოქნილი თანატოლთა კლასის საშუალო"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:49
+#, python-format
+msgid ""
+"When enabled, learners who have received at least 30%% of the required \\"
+msgstr ""
+"როდესაც ჩართულია, მოსწავლეები, რომლებმაც მიიღეს საჭირო რაოდენობის მინიმუმ "
+"30%% \\"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:53
+msgid ""
+"This feature is being enabled by the course-level setting. It can be found "
+"under the Open Response Assessment Settings card on the Pages & Resources "
+"studio page."
+msgstr ""
+"ეს ფუნქცია ჩართულია კურსის დონის პარამეტრით. ის შეგიძლიათ იხილოთ ღია პასუხის"
+" შეფასების პარამეტრების ბარათში გვერდები და რესურსების სტუდიის გვერდზე."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "შეფასების სტრატეგია თანატოლების შეფასებისთვის"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "მნიშვნელობა"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "მედიანა (ნაგულისხმევი)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"შეარჩიეთ სასურველი შეფასების სტრატეგია თანატოლების შეფასებისთვის. "
+"ნაგულისხმევად, ყველა თანატოლთა მიმოხილვის მედიანა გამოიყენება საბოლოო "
+"შეფასების გამოსათვლელად. თუ აირჩევთ საშუალოს, გამოყენებული იქნება ყველა "
+"თანატოლთა მიმოხილვის საშუალო."
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
+msgid "Peer Assessment Deadlines"
+msgstr "თანატოლების შეფასების ვადები"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
@@ -200,6 +600,12 @@ msgstr "დაწყების თარიღი"
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
 msgid "Start Time"
 msgstr "დაწყების დრო"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing peer responses."
+msgstr ""
+"თარიღი და დრო, როდესაც მოსწავლეებს შეუძლიათ დაიწყონ თანატოლების პასუხების "
+"შეფასება."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
@@ -212,6 +618,10 @@ msgstr "საბოლოო ვადა"
 msgid "Due Time"
 msgstr "საბოლოო დრო"
 
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
+msgid "The date and time when all peer assessments must be complete."
+msgstr "თარიღი და დრო, როდესაც ყველა თანატოლების შეფასება უნდა იყოს სრული."
+
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
 msgstr "დავალების გაშვების შემდეგ, მინიშნების წაშლას ვერ შეძლებთ."
@@ -223,6 +633,10 @@ msgid ""
 msgstr ""
 "მინიშნებები. ჩაანაცვლეთ ტექსტის ნიმუში თქვენი საკუთარით. მეტი "
 "ინფორმაციისათვის, იხილეთ ORA დოკუმენტაცია."
+
+#: templates/legacy/edit/oa_edit_prompts.html:22
+msgid "Add Prompt"
+msgstr "მოთხოვნის დამატება"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -256,6 +670,43 @@ msgstr ""
 "წაახალისეთ მსმენელები, რომ უზრუნველყონ უკუკავშირი იმ პასუხებზე, რომლებიც მათ"
 " შეაფასეს. შეგიძლიათ შეცვალოთ შაბლონური ტექსტი თქვენი საკუთარით."
 
+#: templates/legacy/edit/oa_edit_rubric.html:49
+msgid "Default Feedback Text"
+msgstr "ნაგულისხმევი გამოხმაურების ტექსტი"
+
+#: templates/legacy/edit/oa_edit_rubric.html:53
+msgid ""
+"Enter feedback text that learners will see before they enter their own "
+"feedback. Use this text to show learners a good example peer assessment."
+msgstr ""
+"შეიყვანეთ გამოხმაურების ტექსტი, რომელსაც მოსწავლეები დაინახავენ საკუთარ "
+"გამოხმაურებამდე. გამოიყენეთ ეს ტექსტი, რათა მოსწავლეებს აჩვენოთ თანატოლების "
+"შეფასების კარგი მაგალითი."
+
+#: templates/legacy/edit/oa_edit_schedule.html:5
+msgid "Deadlines Configuration"
+msgstr "ვადების კონფიგურაცია"
+
+#: templates/legacy/edit/oa_edit_schedule.html:9
+msgid "Select a deadline configuration option"
+msgstr "აირჩიეთ ვადის კონფიგურაციის ვარიანტი"
+
+#: templates/legacy/edit/oa_edit_schedule.html:14
+msgid "Configure deadlines manually"
+msgstr "ვადების ხელით კონფიგურაცია"
+
+#: templates/legacy/edit/oa_edit_schedule.html:18
+msgid "Match deadlines to the subsection due date"
+msgstr "შეესაბამება ვადები ქვეპუნქტის ვადის თარიღს"
+
+#: templates/legacy/edit/oa_edit_schedule.html:22
+msgid "Match deadlines to the course end date"
+msgstr "ვადების შეხამება კურსის დასრულების თარიღთან"
+
+#: templates/legacy/edit/oa_edit_schedule.html:25
+msgid "Learn more about open response date settings"
+msgstr "შეიტყვეთ მეტი ღია რეაგირების თარიღის პარამეტრების შესახებ"
+
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
 msgstr "პასუხების მიღების დაწყების თარიღი"
@@ -263,6 +714,15 @@ msgstr "პასუხების მიღების დაწყები�
 #: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
 msgstr "დავალების დაწყების დრო"
+
+#: templates/legacy/edit/oa_edit_schedule.html:57
+msgid "The date and time when learners can begin submitting responses."
+msgstr ""
+"თარიღი და დრო, როდესაც მოსწავლეებს შეუძლიათ დაიწყონ პასუხების წარდგენა."
+
+#: templates/legacy/edit/oa_edit_schedule.html:65
+msgid "Response Due Date"
+msgstr "პასუხის ვადის თარიღი"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
@@ -278,13 +738,120 @@ msgstr ""
 msgid "Step: Self Assessment"
 msgstr "საფეხური: თვითშეფასება"
 
+#: templates/legacy/edit/oa_edit_self_assessment.html:12
+msgid ""
+"Self Assessment asks learners to grade their own submissions against the "
+"rubric."
+msgstr ""
+"თვითშეფასება სთხოვს მოსწავლეებს, შეაფასონ საკუთარი წარდგენები რუბრიკის "
+"მიხედვით."
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
+msgid "Self Assessment Deadlines"
+msgstr "თვითშეფასების ვადები"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing their responses."
+msgstr ""
+"თარიღი და დრო, როდესაც მოსწავლეებს შეუძლიათ დაიწყონ თავიანთი პასუხების "
+"შეფასება."
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
+msgid "The date and time when all self assessments must be complete."
+msgstr "თარიღი და დრო, როდესაც ყველა თვითშეფასება უნდა იყოს სრული."
+
+#: templates/legacy/edit/oa_edit_staff_assessment.html:8
+msgid "Step: Staff Assessment"
+msgstr "ნაბიჯი: პერსონალის შეფასება"
+
+#: templates/legacy/edit/oa_edit_staff_assessment.html:12
+msgid ""
+"Staff Assessment gates sets the final grade for students if enabled with "
+"other steps, though it can also be used as a standalone step."
+msgstr ""
+"პერსონალის შეფასების კარიბჭე ადგენს საბოლოო შეფასებას სტუდენტებისთვის, თუ "
+"ჩართულია სხვა ნაბიჯებით, თუმცა ის ასევე შეიძლება გამოყენებულ იქნას როგორც "
+"დამოუკიდებელი ნაბიჯი."
+
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
 msgstr "საფეხური: მსმენელის ტრენინგი "
 
+#: templates/legacy/edit/oa_edit_student_training.html:14
+msgid ""
+"Learner Training is used to help students practice grading a simulated peer "
+"submission in order to train them on the rubric and ensure learner's "
+"understand the rubric for either Self or Peer Assessment steps."
+msgstr ""
+"მოსწავლეთა ტრენინგი გამოიყენება იმისთვის, რომ დაეხმაროს სტუდენტებს ივარჯიშონ"
+" თანატოლების სიმულაციური წარდგენის შეფასებაში, რათა მოამზადონ ისინი "
+"რუბრიკაზე და უზრუნველყონ მოსწავლის გაგება რუბრიკის თვითმმართველობის ან "
+"თანატოლების შეფასების ნაბიჯებისთვის."
+
+#: templates/legacy/edit/oa_edit_student_training.html:17
+msgid ""
+"Configuration: For this step to be fully configured you must provide one or "
+"more graded sample responses. Learners must then match this instructor score"
+" to advance and are provided feedback when their score doesn't match the "
+"sample response."
+msgstr ""
+"კონფიგურაცია: იმისათვის, რომ ეს ნაბიჯი სრულად იყოს კონფიგურირებული, თქვენ "
+"უნდა მიაწოდოთ ერთი ან მეტი შეფასებული ნიმუშის პასუხი. შემდეგ მოსწავლეებმა "
+"უნდა შეესაბამებოდეს ინსტრუქტორის ამ ქულას წინსვლისთვის და მიეწოდებათ "
+"უკუკავშირი, როდესაც მათი ქულა არ ემთხვევა პასუხის ნიმუშს."
+
+#: templates/legacy/edit/oa_edit_student_training.html:22
+msgid "View / Add Sample Responses"
+msgstr "პასუხების ნიმუშის ნახვა / დამატება"
+
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
 msgstr "პასუხის შაბლონის დამატება "
+
+#: templates/legacy/edit/oa_rubric_reuse.html:4
+msgid "Clone Rubric"
+msgstr "კლონი რუბრიკა"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:7
+msgid ""
+"To clone a rubric from an existing published or unpublished draft, you can "
+"search by the Block ID. Note that cloning is one-way, meaning changes made "
+"after cloning will only affect the rubric being modified, and will not "
+"modify any rubric it was cloned from."
+msgstr ""
+"არსებული გამოქვეყნებული ან გამოუქვეყნებელი მონახაზიდან რუბრიკის "
+"კლონირებისთვის, შეგიძლიათ მოძებნოთ ბლოკის ID-ით. გაითვალისწინეთ, რომ "
+"კლონირება ცალმხრივია, რაც იმას ნიშნავს, რომ კლონირების შემდეგ "
+"განხორციელებული ცვლილებები გავლენას მოახდენს მხოლოდ რუბრიკაზე, რომელიც "
+"იცვლება და არ შეცვლის არცერთ რუბრიკას, საიდანაც ის კლონირებულია."
+
+#: templates/legacy/edit/oa_rubric_reuse.html:9
+msgid "Block ID For this ORA:"
+msgstr "ბლოკის ID ამ ORA-სთვის:"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:19
+msgid "Block ID"
+msgstr "ბლოკის ID"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:21
+msgid "No other Open Response Assessments found in course"
+msgstr "კურსში სხვა ღია პასუხის შეფასებები ვერ მოიძებნა"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:31
+msgid "Clone"
+msgstr "კლონირება"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:37
+msgid "Rubric Successfully Cloned from Block ID: "
+msgstr "რუბრიკა წარმატებით კლონირებულია ბლოკის ID-დან: "
+
+#: templates/legacy/edit/oa_training_example.html:7
+msgid "Scored Response"
+msgstr "გატანილი პასუხი"
+
+#: templates/legacy/edit/oa_training_example.html:16
+msgid "Response Score"
+msgstr "პასუხის ქულა"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
@@ -293,6 +860,56 @@ msgstr "პასუხი"
 #: templates/legacy/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
 msgstr "არ არის არჩეული"
+
+#: templates/legacy/edit/oa_training_example_criterion.html:15
+#: templates/legacy/oa_rubric.html:43
+#: templates/legacy/student_training/student_training.html:128
+msgid "points"
+msgstr "წერტილი"
+
+#: templates/legacy/grade/oa_assessment_feedback.html:8
+#, python-format
+msgid ""
+"\n"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
+msgstr ""
+"\n"
+"%(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
+
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"%(assessment_title)s - %(points)s წერტილი\n"
+"                  "
+msgstr[1] ""
+"\n"
+"%(assessment_title)s - %(points)s ქულა\n"
+"                  "
+
+#: templates/legacy/grade/oa_assessment_title.html:24
+#, python-format
+msgid "More information about %(name)s"
+msgstr "დამატებითი ინფორმაცია %(name)s"
+
+#: templates/legacy/grade/oa_grade_cancelled.html:14
+#: templates/legacy/grade/oa_grade_complete.html:15
+#: templates/legacy/grade/oa_grade_complete.html:26
+#: templates/legacy/grade/oa_grade_incomplete.html:14
+#: templates/legacy/grade/oa_grade_not_started.html:14
+#: templates/legacy/grade/oa_grade_waiting.html:14
+msgid "Your Grade"
+msgstr "თქვენი შეფასება"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:19
 #, python-format
@@ -318,6 +935,15 @@ msgid ""
 msgstr ""
 "\n"
 "%(points_earned)sშესაძლო%(points_possible)s-დან"
+
+#: templates/legacy/grade/oa_grade_complete.html:38
+#: templates/legacy/response/oa_response.html:29
+msgid "Your Response"
+msgstr "თქვენი პასუხი"
+
+#: templates/legacy/grade/oa_grade_complete.html:41
+msgid "Your Upload"
+msgstr "თქვენი ატვირთვა"
 
 #: templates/legacy/grade/oa_grade_complete.html:46
 msgid "Assessments of Your Response"
@@ -365,6 +991,14 @@ msgstr "მოგვაწოდეთ თქვენი აზრი თვი
 #: templates/legacy/grade/oa_grade_complete.html:126
 msgid "Submitting Feedback"
 msgstr "უკუკავშირის გაგზავნა"
+
+#: templates/legacy/grade/oa_grade_complete.html:134
+msgid ""
+"Your feedback has been submitted. Course staff will be able to see this "
+"feedback when they review course records."
+msgstr ""
+"თქვენი გამოხმაურება გაგზავნილია. კურსის თანამშრომლებს შეეძლებათ ნახონ ეს "
+"გამოხმაურება კურსის ჩანაწერების განხილვისას."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
@@ -437,6 +1071,18 @@ msgstr "თქვენ ჯერ არ დაგიწყიათ ეს ა�
 msgid "Waiting for Assessments"
 msgstr "შეფასების მოლოდინში"
 
+#: templates/legacy/grade/oa_grade_waiting.html:33
+msgid ""
+"You have completed your steps in the assignment, but some assessments still "
+"need to be done on your response. When the assessments of your response are "
+"complete, you will see feedback from everyone who assessed your response, "
+"and you will receive your final grade."
+msgstr ""
+"თქვენ დაასრულეთ თქვენი ნაბიჯები დავალებაში, მაგრამ გარკვეული შეფასებები ჯერ "
+"კიდევ უნდა გაკეთდეს თქვენს პასუხზე. როდესაც თქვენი პასუხის შეფასებები "
+"დასრულდება, ნახავთ გამოხმაურებას ყველასგან, ვინც შეაფასა თქვენი პასუხი და "
+"მიიღებთ საბოლოო შეფასებას."
+
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
 #: templates/legacy/staff_area/oa_staff_area.html:18
@@ -456,6 +1102,18 @@ msgstr ""
 msgid "Please wait"
 msgstr "გთხოვთ დაიცადოთ"
 
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
+msgid "Waiting Step Details"
+msgstr "ლოდინის ნაბიჯის დეტალები"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
+msgid ""
+"Waiting Step details view is unavailable. This item is not configured for "
+"peer assessments."
+msgstr ""
+"ლოდინის ნაბიჯის დეტალების ხედი მიუწვდომელია. ეს ელემენტი არ არის "
+"კონფიგურირებული თანატოლთა შეფასებისთვის."
+
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
 msgid "%(num_points)s points"
@@ -474,6 +1132,25 @@ msgid ""
 msgstr ""
 "ამ დავალების ყველა საფეხურის დასრულების შემდეგ, დაინახავთ თქვენი ჯგუფის "
 "წევრების უმაღლესი შეფასების მქონე პასუხებს."
+
+#: templates/legacy/message/oa_message_cancelled.html:8
+msgid ""
+"Your team’s submission has been cancelled. Your team will receive a grade of"
+" zero unless course staff resets your assessment to allow the team to "
+"resubmit a response."
+msgstr ""
+"თქვენი გუნდის წარდგენა გაუქმდა. თქვენი გუნდი მიიღებს ნულოვან შეფასებას, თუ "
+"კურსის პერსონალი არ გადაადგენს თქვენს შეფასებას, რათა გუნდს ხელახლა "
+"წარადგინოს პასუხი."
+
+#: templates/legacy/message/oa_message_cancelled.html:10
+msgid ""
+"Your submission has been cancelled. You will receive a grade of zero unless "
+"course staff resets your assessment to allow you to resubmit a response."
+msgstr ""
+"თქვენი წარდგენა გაუქმდა. თქვენ მიიღებთ ნულოვან შეფასებას, თუ კურსის "
+"პერსონალი არ გადაადგენს თქვენს შეფასებას, რათა მოგცეთ პასუხის ხელახლა "
+"წარდგენა."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
@@ -498,6 +1175,14 @@ msgid ""
 msgstr ""
 "თქვენ დაასრულეთ მოცემული დავალება. თქვენი საბოლოო შეფასება ხელმისაწვდომი "
 "იქნება შეფასებების დასრულების შემდეგ."
+
+#: templates/legacy/message/oa_message_complete.html:10
+msgid ""
+"You have completed this assignment. Review your grade and your assessment "
+"details."
+msgstr ""
+"თქვენ დაასრულეთ ეს დავალება. გადახედეთ თქვენს შეფასებას და შეფასების "
+"დეტალებს."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
@@ -524,6 +1209,17 @@ msgstr ""
 "მიმდინარეობს დავალების შესრულება. გადაამოწმეთ მოგვიანებით, შემოწმების "
 "პერიოდის დაწყების შემდეგ."
 
+#: templates/legacy/message/oa_message_incomplete.html:20
+#, python-format
+msgid ""
+"\n"
+"                                    %(start_strong)sThis assignment is in progress. The self assessment step will close soon.%(end_strong)s You still need to complete the %(start_link)sself assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"%(start_strong)sეს დავალება მიმდინარეობს. თვითშეფასების ნაბიჯი მალე დაიხურება. %(end_strong)s თქვენ ჯერ კიდევ უნდა დაასრულოთ %(start_link)sთვითშეფასების%(end_link)s ნაბიჯი.\n"
+"                                "
+
 #: templates/legacy/message/oa_message_incomplete.html:24
 #, python-format
 msgid ""
@@ -533,6 +1229,17 @@ msgid ""
 msgstr ""
 "\n"
 "                                    მიმდინარეობს ამ დავალების შესრულება. თქვენ ჯერ კიდევ გჭირდებათ %(start_link)sთვითშეფასების%(end_link)s საფეხურის დასრულება.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:38
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress.%(start_strong)sThe peer assessment step will close soon.%(end_strong)s All submitted peer responses have been assessed. Check back later to see if more learners have submitted responses. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"ეს დავალება მიმდინარეობს. %(start_strong)sთანატოლების შეფასების ნაბიჯი მალე დაიხურება. %(end_strong)s ყველა წარმოდგენილი თანატოლების პასუხი შეფასდა. შეამოწმეთ მოგვიანებით, რათა ნახოთ, წარადგინა თუ არა მეტმა მოსწავლემ პასუხები. თქვენ ჯერ კიდევ უნდა დაასრულოთ %(start_link)sთანატოლების შეფასება%(end_link)s ნაბიჯი.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
@@ -556,6 +1263,36 @@ msgstr ""
 "                                    ეს დავალება შესრულების პროცესშია. %(start_strong)sურთიერთშეფასების საფეხური მალე დაიხურება.%(end_strong)s თქვენ კვლავ გჭირდებათ %(start_link)sურთიერთშეფასების%(end_link)s საფეხურის დასრულება.\n"
 "                                "
 
+#: templates/legacy/message/oa_message_incomplete.html:50
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    მიმდინარეობს ამ დავალების შესრულება. თქვენ ჯერ კიდევ გჭირდებათ %(start_link)sთვითშეფასების%(end_link)s საფეხურის დასრულება.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_no_team.html:4
+msgid "Team membership is required to view this assignment"
+msgstr "ამ დავალების სანახავად საჭიროა გუნდის წევრობა"
+
+#: templates/legacy/message/oa_message_no_team.html:7
+#, python-format
+msgid ""
+"\n"
+"            This is a team assignment for team-set \"%(teamset_name)s\".\n"
+"            You are currently not on a team in team-set \"%(teamset_name)s\".\n"
+"            You must be on a team in team-set \"%(teamset_name)s\" to access this team assignment.\n"
+"            "
+msgstr ""
+"\n"
+"ეს არის გუნდური დავალება გუნდური კომპლექტისთვის \"%(teamset_name)s\".\n"
+"            თქვენ ამჟამად არ ხართ გუნდში \"%(teamset_name)s\"-ში.\n"
+"            თქვენ უნდა იყოთ გუნდში გუნდის ნაკრებში \"%(teamset_name)s\" ამ გუნდის დავალებაზე წვდომისთვის.\n"
+"            "
+
 #: templates/legacy/message/oa_message_open.html:7
 #, python-format
 msgid ""
@@ -576,9 +1313,22 @@ msgstr ""
 "\n"
 "ეს დავალება რამოდენიმე ნაბიჯისგან შედგება. პირველ ნაბიჯზე უნდა უპასუხოთ მითითებულ საკითხს. დანარჩენი ნაბიჯები გამოჩნდება%(start_tag)sთქვენი პასუხის%(end_tag)sშეტანის ველის ქვემოთ."
 
+#: templates/legacy/message/oa_message_unavailable.html:4
+msgid "Instructions Unavailable"
+msgstr "ინსტრუქცია მიუწვდომელია"
+
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
 msgstr "ამ საფეხურის ინსტრუქციები არ ჩაიტვირთა."
+
+#: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
+msgid ""
+"This assignment has several steps. In the first step, you'll provide a "
+"response to the prompt. The other steps appear below the Your Response "
+"field."
+msgstr ""
+"ამ დავალებას რამდენიმე ნაბიჯი აქვს. პირველ ეტაპზე თქვენ მოგაწვდით პასუხს "
+"მოთხოვნაზე. სხვა ნაბიჯები გამოჩნდება თქვენი პასუხის ველის ქვემოთ."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
 #: templates/openassessmentblock/base.html:105
@@ -605,6 +1355,23 @@ msgstr "კომენტარები"
 msgid "The question for this section"
 msgstr "კითხვა ამ განყოფილებისათვის"
 
+#: templates/legacy/oa_team_uploaded_files.html:9
+msgid "Files that were uploaded by your teammates:"
+msgstr "ფაილები, რომლებიც ატვირთულია თქვენი თანაგუნდელების მიერ:"
+
+#: templates/legacy/oa_team_uploaded_files.html:28
+#: templates/legacy/oa_uploaded_file.html:34
+msgid "View the files associated with this submission:"
+msgstr "იხილეთ ამ გამოგზავნილთან დაკავშირებული ფაილები:"
+
+#: templates/legacy/oa_team_uploaded_files.html:32
+msgid "Uploaded by"
+msgstr "ატვირთულია:"
+
+#: templates/legacy/oa_uploaded_file.html:16
+msgid "Files that were uploaded by you:"
+msgstr "თქვენს მიერ ატვირთული ფაილები:"
+
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
 "Caution: These files were uploaded by another course learner and have not "
@@ -619,6 +1386,50 @@ msgstr ""
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
 msgstr "შეაფასეთ სხვა სტუდენტები"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
+#. 5 days and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:44
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 00:00 UTC (in 5 days
+#. and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:51
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/peer/oa_peer_assessment.html:61
+#, python-format
+msgid ""
+"\n"
+"                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"                "
+msgstr ""
+"\n"
+"მიმდინარეობს (%(num_must_grade)s %(review_number)s)\n"
+"                "
+
+#: templates/legacy/peer/oa_peer_assessment.html:75
+#: templates/legacy/peer/oa_peer_turbo_mode.html:45
+msgid "Read and assess the following response from one of your peers."
+msgstr "წაიკითხეთ და შეაფასეთ თქვენი ერთ-ერთი თანატოლის შემდეგი პასუხი."
 
 #: templates/legacy/peer/oa_peer_assessment.html:87
 #: templates/legacy/peer/oa_peer_turbo_mode.html:56
@@ -690,6 +1501,18 @@ msgstr "შეფასებისთვის დამატებითი �
 msgid "Continue Assessing Peers"
 msgstr "განაგრძეთ ჯგუფის წევრების შეფასება."
 
+#: templates/legacy/peer/oa_peer_turbo_mode.html:26
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
+#, python-format
+msgid ""
+"\n"
+"        Complete (%(num_graded)s)\n"
+"      "
+msgstr ""
+"\n"
+"სრული (%(num_graded)s)\n"
+"      "
+
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
 msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
@@ -729,39 +1552,247 @@ msgstr ""
 "პასუხი. ამ საკითხის ყველა საფეხურის დასრულებისა და ჯგუფის წევრების მიერ "
 "თქვენი პასუხების შეფასების შემდეგ, თქვენ მიიღებთ საბოლოო შეფასებას."
 
+#: templates/legacy/response/oa_response.html:27
+msgid "Your Team's Response"
+msgstr "თქვენი გუნდის პასუხი"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/response/oa_response.html:39
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/response/oa_response.html:46
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
 msgid "In Progress"
 msgstr "მიმდინარეობს დამუშავება"
 
+#: templates/legacy/response/oa_response.html:66
+msgid "Enter your team's response to the prompt."
+msgstr "შეიყვანეთ თქვენი გუნდის პასუხი მოთხოვნაზე."
+
+#: templates/legacy/response/oa_response.html:68
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time before the due date\n"
+"                      "
+msgstr ""
+"\n"
+"თქვენი ნამუშევარი ავტომატურად შეინახება და თქვენ შეგიძლიათ დაბრუნდეთ თქვენი გუნდის პასუხის დასასრულებლად ნებისმიერ დროს ვადის გასვლამდე\n"
+"                      "
+
+#: templates/legacy/response/oa_response.html:81
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time.\n"
+"                      "
+msgstr ""
+"\n"
+"თქვენი სამუშაო ავტომატურად შეინახება და ნებისმიერ დროს შეგიძლიათ დაბრუნდეთ თქვენი გუნდის პასუხის დასასრულებლად.\n"
+"                      "
+
+#: templates/legacy/response/oa_response.html:86
+msgid ""
+"After you submit a response on behalf of your team, it cannot be edited."
+msgstr ""
+"თქვენი გუნდის სახელით პასუხის გაგზავნის შემდეგ, მისი რედაქტირება "
+"შეუძლებელია."
+
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
 msgstr "უპასუხეთ მითითებულ საკითს."
+
+#: templates/legacy/response/oa_response.html:92
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the subsection due date "
+msgstr ""
+"თქვენი ნამუშევარი ავტომატურად შეინახება და თქვენ შეგიძლიათ დაბრუნდეთ თქვენი "
+"პასუხის დასასრულებლად ნებისმიერ დროს ქვეპუნქტის ვადამდე "
+
+#: templates/legacy/response/oa_response.html:94
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the course ends "
+msgstr ""
+"თქვენი ნამუშევარი ავტომატურად შეინახება და თქვენ შეგიძლიათ დაბრუნდეთ თქვენი "
+"პასუხის დასასრულებლად ნებისმიერ დროს კურსის დასრულებამდე "
+
+#: templates/legacy/response/oa_response.html:96
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the due date "
+msgstr ""
+"თქვენი ნამუშევარი ავტომატურად შეინახება და თქვენ შეგიძლიათ დაბრუნდეთ თქვენი "
+"პასუხის დასასრულებლად ნებისმიერ დროს ვადის გასვლამდე "
+
+#: templates/legacy/response/oa_response.html:108
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time."
+msgstr ""
+"თქვენი ნამუშევარი ავტომატურად შეინახება და ნებისმიერ დროს შეგიძლიათ "
+"დაბრუნდეთ თქვენი პასუხის დასასრულებლად."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
 msgstr "პასუხის გაგზავნის შემდეგ თქვენ ვეღარ შეძლებთ მის ჩასწორებას"
 
+#: templates/legacy/response/oa_response.html:120
+msgid "What will this assignment be graded on?"
+msgstr "რას შეფასდება ეს დავალება?"
+
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
 msgstr "მინიშნება ამ განყოფილებისათვის"
+
+#: templates/legacy/response/oa_response.html:148
+msgid "You are on team "
+msgstr "თქვენ გუნდში ხართ "
+
+#: templates/legacy/response/oa_response.html:150
+msgid "Team Members: "
+msgstr "გუნდის წევრები: "
+
+#: templates/legacy/response/oa_response.html:155
+#, python-format
+msgid ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              have/has already submitted a response to this assignment with another team,\n"
+"                                              and will not be a part of your team's submission or assignment grade.\n"
+"                                          "
+msgstr ""
+"\n"
+"%(team_members_with_external_submissions)s\n"
+"                                              აქვს / უკვე წარადგინა პასუხი ამ დავალებაზე სხვა გუნდთან;\n"
+"                                              და არ იქნება თქვენი გუნდის წარდგენის ან დავალების შეფასების ნაწილი.\n"
+"                                          "
+
+#: templates/legacy/response/oa_response.html:171
+msgid "Team Response "
+msgstr "გუნდის პასუხი "
+
+#: templates/legacy/response/oa_response.html:173
+msgid "Your Response "
+msgstr "თქვენი პასუხი "
+
+#: templates/legacy/response/oa_response.html:177
+#: templates/legacy/response/oa_response.html:247
+msgid "(Required)"
+msgstr "(აუცილებელია)"
 
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
 msgid "(Optional)"
 msgstr "(არასავალდებულო)"
 
+#: templates/legacy/response/oa_response.html:183
+msgid ""
+"\n"
+"                                              Teams should designate one team member to submit a response on behalf of the\n"
+"                                              entire team.  All team members can use this space to work on draft responses,\n"
+"                                              but you will not be able to see your teammates' drafts made in this space, so\n"
+"                                              please coordinate with them to decide on the final response the designated team\n"
+"                                              member should submit.\n"
+"                                          "
+msgstr ""
+"\n"
+"გუნდებმა უნდა დანიშნონ გუნდის ერთი წევრი, რომელიც წარადგინოს პასუხის სახელით\n"
+"                                              მთელი გუნდი.  გუნდის ყველა წევრს შეუძლია გამოიყენოს ეს სივრცე პასუხების პროექტზე მუშაობისთვის,\n"
+"                                              მაგრამ თქვენ ვერ შეძლებთ ნახოთ თქვენი თანაგუნდელების მონახაზები, რომლებიც დამზადებულია ამ სივრცეში, ასე რომ,\n"
+"                                              გთხოვთ, კოორდინაცია გაუწიოთ მათ, რათა გადაწყვიტოთ საბოლოო პასუხი დანიშნულ გუნდს\n"
+"                                              წევრმა უნდა წარადგინოს.\n"
+"                                          "
+
+#: templates/legacy/response/oa_response.html:197
+msgid "Enter your response to the prompt above."
+msgstr "შეიყვანეთ თქვენი პასუხი ზემოთ მოცემულ მოთხოვნაზე."
+
+#: templates/legacy/response/oa_response.html:211
+#, python-format
+msgid ""
+"\n"
+"                                      You are currently on Team %(team_name)s. Since you were on Team %(previous_team_name)s\n"
+"                                      when they submitted a response to this assignment, you are seeing Team %(previous_team_name)s’s\n"
+"                                      response and will receive the same grade for this assignment as your former teammates.\n"
+"                                      You will not be part of Team %(team_name)s’s submission for this assignment and will not\n"
+"                                      receive a grade for their submission.\n"
+"                                  "
+msgstr ""
+"\n"
+"თქვენ ამჟამად იმყოფებით გუნდი %(team_name)s-ში. მას შემდეგ, რაც თქვენ იყავით გუნდში %(previous_team_name)s\n"
+"                                      როდესაც თქვენ პასუხს გასცემთ ამ დავალებას, თქვენ ხედავთ გუნდს %(previous_team_name)s\n"
+"                                      პასუხი და მიიღებთ იგივე შეფასებას ამ დავალებისთვის, როგორც თქვენი ყოფილი თანაგუნდელები.\n"
+"                                      თქვენ არ იქნებით Team %(team_name)s-ის წარდგენის ნაწილი ამ დავალებისთვის და არ იქნებით\n"
+"                                      მიიღეთ შეფასება მათი წარდგენისთვის.\n"
+"                                  "
+
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
 msgstr "თქვენი პასუხის შენახვა ვერ ხერხდება"
+
+#: templates/legacy/response/oa_response.html:232
+msgid "Status of Your Response"
+msgstr "თქვენი პასუხის სტატუსი"
+
+#: templates/legacy/response/oa_response.html:245
+msgid "File Uploads "
+msgstr "ფაილის ატვირთვები "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr ""
+"\n"
+"ატვირთეთ ფაილები და გადახედეთ თქვენს და თქვენი თანაგუნდელების მიერ ატვირთულ ფაილებს ქვემოთ. დარწმუნდით, რომ დაამატეთ\n"
+"                                  თქვენი ფაილების აღწერილობები, რათა დაეხმაროთ თქვენს თანაგუნდელებს მათი ამოცნობაში.\n"
+"                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
 msgstr "ფაილების ატვირთვა ვერ მოხერხდა"
 
+#: templates/legacy/response/oa_response.html:267
+msgid "We could not delete files"
+msgstr "ფაილების წაშლა ვერ შევძელით"
+
+#: templates/legacy/response/oa_response.html:274
+msgid "Select one or more files to upload for this submission."
+msgstr "აირჩიეთ ერთი ან მეტი ფაილი ამ გამოგზავნისთვის ასატვირთად."
+
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
 msgstr "პასუხის გასაგზავნად აირჩიეთ ასატვირთი ფაილი."
+
+#: templates/legacy/response/oa_response.html:280
+msgid "Supported file types: "
+msgstr "მხარდაჭერილი ფაილის ტიპები: "
 
 #: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
@@ -770,6 +1801,46 @@ msgstr "ფაილების ატვირთვა"
 #: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "ფაილის ატვირთვა"
+
+#: templates/legacy/response/oa_response.html:305
+msgid "This is a team submission."
+msgstr "ეს არის გუნდის წარდგენა."
+
+#: templates/legacy/response/oa_response.html:307
+msgid ""
+"One team member should submit a response with the team’s shared files and a "
+"text response on behalf of the entire team."
+msgstr ""
+"გუნდის ერთმა წევრმა უნდა წარმოადგინოს პასუხი გუნდის გაზიარებული ფაილებით და "
+"ტექსტური პასუხი მთელი გუნდის სახელით."
+
+#: templates/legacy/response/oa_response.html:309
+msgid ""
+"One team member should submit a response with the team’s shared files on "
+"behalf of the entire team."
+msgstr ""
+"გუნდის ერთმა წევრმა უნდა წარადგინოს პასუხი გუნდის გაზიარებულ ფაილებთან ერთად"
+" მთელი გუნდის სახელით."
+
+#: templates/legacy/response/oa_response.html:311
+msgid ""
+"One team member should submit a text response on behalf of the entire team."
+msgstr ""
+"გუნდის ერთმა წევრმა უნდა წარადგინოს ტექსტური პასუხი მთელი გუნდის სახელით."
+
+#: templates/legacy/response/oa_response.html:313
+msgid "One team member should submit on behalf of the entire team."
+msgstr "გუნდის ერთმა წევრმა უნდა წარადგინოს მთელი გუნდის სახელით."
+
+#: templates/legacy/response/oa_response.html:315
+msgid ""
+"\n"
+"                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+msgstr ""
+"\n"
+"                  შეიტყვეთ მეტი გუნდის დავალებების შესახებ აქ: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">ბმული</a>)\n"
+"                  "
 
 #: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
@@ -782,6 +1853,17 @@ msgstr "გააგზავნეთ პასუხი და გადად
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
 msgstr "თქვენი გაგზავნილი პასუხი გაუქმებულია."
+
+#: templates/legacy/response/oa_response_cancelled.html:37
+#, python-format
+msgid ""
+"\n"
+"                                Your submission has been cancelled by %(removed_by_username)s on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"თქვენი წარდგენა გაუქმდა %(removed_by_username)s-ის მიერ %(removed_datetime)s\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
 #, python-format
@@ -840,6 +1922,14 @@ msgstr "თქვენი პასუხი"
 msgid "Your Uploaded Files"
 msgstr "თქვენს მიერ ატვირთული ფაილები"
 
+#: templates/legacy/response/oa_response_submitted.html:32
+msgid ""
+"Your response has been submitted. You will receive your grade after all "
+"steps are complete and your response is fully assessed."
+msgstr ""
+"თქვენი პასუხი წარდგენილია. თქვენ მიიღებთ თქვენს შეფასებას მას შემდეგ, რაც "
+"ყველა ნაბიჯი დასრულდება და თქვენი პასუხი სრულად შეფასდება."
+
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
 msgid ""
@@ -873,17 +1963,80 @@ msgstr ""
 "                        კვლავ საჭიროა დაასრულოთ %(start_tag)sთვითშეფასების%(end_tag)s საფეხური.\n"
 "                    "
 
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "ჩვენ ვერ შევძელით თქვენი პასუხის გადატვირთვა"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "პასუხის გადატვირთვა და ხელახლა გაგზავნა"
+
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
 msgstr "შეცდომა"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"\n"
+"თქვენ შეუერთდით %(team_name)s გუნდს მას შემდეგ, რაც მათ წარადგინეს პასუხი ამ დავალებაზე\n"
+"                            და თქვენ არ მიიღებთ შეფასებას მათი პასუხისთვის. თქვენ ასევე ადრე არ წარადგინეთ\n"
+"                            ამ დავალებაზე პასუხი სხვა გუნდთან ერთად. გთხოვთ, დაუკავშირდეთ კურსის პერსონალს თქვენი განსახილველად\n"
+"                            ამ დავალების ვარიანტები.\n"
+"                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
 msgstr "შეაფასეთ თქვენი პასუხი"
 
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/self/oa_self_assessment.html:41
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/self/oa_self_assessment.html:48
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
 msgstr "გაგზავნეთ თქვენი შეფასება"
+
+#: templates/legacy/self/oa_self_closed.html:32
+msgid ""
+"The due date for this step has passed. This step is now closed. You can no "
+"longer complete a self assessment or continue with this assignment, and you "
+"will receive a grade of Incomplete."
+msgstr ""
+"ამ ნაბიჯის ვადის გადადგმული ვადა გავიდა. ეს ნაბიჯი ახლა დახურულია. თქვენ "
+"აღარ შეგიძლიათ დაასრულოთ თვითშეფასება ან გააგრძელოთ ეს დავალება და მიიღებთ "
+"შეფასებას არასრული."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
@@ -894,10 +2047,22 @@ msgstr "კურსის თანამშრომლების შეფ�
 msgid "Manage Individual Learners"
 msgstr "ცალკეული მსმენელების მართვა"
 
+#: templates/legacy/staff_area/oa_staff_area.html:10
+msgid "Manage Team Responses"
+msgstr "გუნდის პასუხების მართვა"
+
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
 msgstr "დავალების სტატისტიკის ნახვა"
+
+#: templates/legacy/staff_area/oa_staff_area.html:22
+msgid "Demo the new Grading Experience"
+msgstr "ახალი შეფასების გამოცდილების დემონსტრირება"
+
+#: templates/legacy/staff_area/oa_staff_area.html:26
+msgid "View ORA in Studio"
+msgstr "ORA-ს ნახვა სტუდიაში"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
@@ -905,13 +2070,25 @@ msgstr "დავალების სტატისტიკის ნახ�
 msgid "Close"
 msgstr "დახურვა"
 
+#: templates/legacy/staff_area/oa_staff_area.html:37
+msgid "Manage Teams"
+msgstr "გუნდების მართვა"
+
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
 msgstr "მიუთითეთ ცალკეული მსმენელის მომხმარებლის სახელი ან ელფოსტის მისამართი"
 
+#: templates/legacy/staff_area/oa_staff_area.html:52
+msgid "Enter a team member's username or edX email"
+msgstr "შეიყვანეთ გუნდის წევრის მომხმარებლის სახელი ან edX ელფოსტა"
+
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
 msgstr "გაგზავნა"
+
+#: templates/legacy/staff_area/oa_staff_area.html:78
+msgid "Response total"
+msgstr "პასუხის ჯამი"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
@@ -926,6 +2103,10 @@ msgstr "მსმენელის პროგრესი"
 msgid "Problem Step"
 msgstr "დავალების საფეხური"
 
+#: templates/legacy/staff_area/oa_staff_area.html:95
+msgid "Active Learners in Step"
+msgstr "აქტიური მოსწავლეები ნაბიჯით"
+
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
 msgstr "თარიღები"
@@ -939,9 +2120,28 @@ msgstr "გაშვების თარიღი"
 msgid "N/A"
 msgstr "მონაცემები არ არის"
 
+#: templates/legacy/staff_area/oa_staff_grade_learners.html:7
+msgid "Staff Assessment"
+msgstr "პერსონალის შეფასება"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
+msgid "Give this team a grade using the problem's rubric."
+msgstr "მიეცით ამ გუნდს შეფასება პრობლემის რუბრიკის გამოყენებით."
+
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
 msgstr "დაწერეთ მსმენელის შეფასება ამოცანის შეფასების სქემის მიხედვით."
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr ""
+"\n"
+"პასუხი: %(team_name)s %(team_usernames)s\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:20
@@ -959,6 +2159,10 @@ msgstr ""
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
 msgstr "მსმენელის პასუხი"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
+msgid "The teams's response to the prompt above"
+msgstr "გუნდების პასუხი ზემოთ მოცემულ მოთხოვნაზე"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
@@ -990,6 +2194,50 @@ msgstr ""
 msgid "Override this learner's current grade using the problem's rubric."
 msgstr ""
 "ამოცანის შეფასების სქემის მიხედვით მსმენელის მიმდინარე შეფასების შეცვლა."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:9
+msgid "Override this team's current grade using the problem's rubric."
+msgstr ""
+"გადალახეთ ამ გუნდის ამჟამინდელი შეფასება პრობლემის რუბრიკის გამოყენებით."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:27
+msgid "Team Response"
+msgstr "გუნდის პასუხი"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:34
+#: templates/legacy/staff_area/oa_student_info.html:59
+msgid "The team's response to the prompt above"
+msgstr "გუნდის პასუხი ზემოთ მოცემულ მოთხოვნაზე"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr ""
+"\n"
+"მოსწავლის ნახვა: %(learner)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr ""
+"\n"
+"მაყურებლის გუნდი: %(team)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:28
+msgid "Learner's Response"
+msgstr "მოსწავლის პასუხი"
+
+#: templates/legacy/staff_area/oa_student_info.html:30
+msgid "Team's Response"
+msgstr "გუნდის პასუხი"
 
 #: templates/legacy/staff_area/oa_student_info.html:39
 #, python-format
@@ -1032,9 +2280,25 @@ msgstr "ურთიერთშეფასების ქულები ა�
 msgid "Peer Assessments Completed by This Learner"
 msgstr "ურთიერთშეფასება შესრულდა ამ მსმენელის მიერ"
 
+#: templates/legacy/staff_area/oa_student_info.html:81
+msgid "Learner's Self Assessment"
+msgstr "მოსწავლის თვითშეფასება"
+
+#: templates/legacy/staff_area/oa_student_info.html:87
+msgid "Staff Assessment for This Learner"
+msgstr "პერსონალის შეფასება ამ მოსწავლისთვის"
+
+#: templates/legacy/staff_area/oa_student_info.html:89
+msgid "Staff Assessment for this Team"
+msgstr "პერსონალის შეფასება ამ გუნდისთვის"
+
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
 msgstr "მოსწავლის საბოლოო ქულა"
+
+#: templates/legacy/staff_area/oa_student_info.html:102
+msgid "Team's Final Grade"
+msgstr "გუნდის საბოლოო შეფასება"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -1051,6 +2315,29 @@ msgstr ""
 msgid "Final Grade Details"
 msgstr "საბოლოო ქულის დეტალები"
 
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"%(assessment_label)s - %(points)s წერტილი\n"
+"                                    "
+msgstr[1] ""
+"\n"
+"%(assessment_label)s - %(points)s ქულა\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_student_info.html:154
+msgid "Feedback Recorded"
+msgstr "ჩაწერილი გამოხმაურება"
+
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
 msgstr "ნაშრომი შეფასების მოლოდინშია."
@@ -1065,6 +2352,16 @@ msgstr ""
 "შეფასებას ვიდრე არ წაშლით მსმენელის ამოცანის სტატუსს, რომ მან ხელახლა შეძლოს"
 " პასუხის გაგზავნა."
 
+#: templates/legacy/staff_area/oa_student_info.html:172
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete the a team member’s state for the problem to"
+" allow the team to resubmit a response."
+msgstr ""
+"გუნდის წარდგენა ამოღებულია შეფასებიდან. გუნდი მიიღებს ნულოვან შეფასებას, თუ "
+"არ წაშლით გუნდის წევრის მდგომარეობას პრობლემისთვის, რათა გუნდს საშუალება "
+"მისცეს ხელახლა წარადგინოს პასუხი."
+
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
 msgstr "ამოცანა არ დაწყებულა."
@@ -1073,9 +2370,47 @@ msgstr "ამოცანა არ დაწყებულა."
 msgid "The problem has not been completed."
 msgstr "ამოცანა დასრულებული არ არის."
 
+#: templates/legacy/staff_area/oa_student_info.html:193
+msgid "Submit Assessment Grade Override"
+msgstr "წარადგინეთ შეფასების შეფასება"
+
+#: templates/legacy/staff_area/oa_student_info.html:195
+msgid "Submit Team Grade Override"
+msgstr "გუნდის შეფასების გადალახვის გაგზავნა"
+
+#: templates/legacy/staff_area/oa_student_info.html:204
+msgid "Unable to perform grade override"
+msgstr "შეუძლებელია კლასის გადალახვის შესრულება"
+
+#: templates/legacy/staff_area/oa_student_info.html:207
+msgid ""
+"Grades are frozen. Grades are automatically frozen 30 days after the course "
+"end date."
+msgstr ""
+"კლასები გაყინულია. ქულები ავტომატურად იყინება კურსის დასრულების დღიდან 30 "
+"დღის შემდეგ."
+
+#: templates/legacy/staff_area/oa_student_info.html:212
+msgid ""
+"This submission has been cancelled and cannot recieve a grade. Refer to "
+"documentation for how to delete the learner’s state for this problem to "
+"allow them to resubmit."
+msgstr ""
+"ეს წარდგენა გაუქმებულია და ვერ მიიღებს შეფასებას. იხილეთ დოკუმენტაცია, თუ "
+"როგორ უნდა წაშალოთ მოსწავლის მდგომარეობა ამ პრობლემისთვის, რათა მათ ხელახლა "
+"გაგზავნონ საშუალება."
+
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
 msgstr "ურთიერთშეფასების შედეგებიდან პასუხის წაშლა"
+
+#: templates/legacy/staff_area/oa_student_info.html:232
+msgid "Remove Team Submission from Grading"
+msgstr "გუნდის წარდგენის წაშლა შეფასებიდან"
+
+#: templates/legacy/staff_area/oa_student_info.html:242
+msgid "Caution: This Action Cannot Be Undone"
+msgstr "სიფრთხილე: ამ მოქმედების გაუქმება შეუძლებელია"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
@@ -1084,6 +2419,13 @@ msgid ""
 msgstr ""
 "მსმენელის წაშლილი პასუხის აღდგენა შეუძლებელია, ამიტომ ეს შესაძლებლობა დიდი "
 "სიფრთხილით უნდა გაოიყენოთ."
+
+#: templates/legacy/staff_area/oa_student_info.html:246
+msgid ""
+"Removing a team's submission cannot be undone and should be done with "
+"caution."
+msgstr ""
+"გუნდის წარდგენის წაშლა არ შეიძლება გაუქმდეს და სიფრთხილით უნდა გაკეთდეს."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
@@ -1096,6 +2438,17 @@ msgstr "პასუხების წაშლა"
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
 msgstr "ამ მსმენელის პასუხების მოძიება ვერ მოხერხდა."
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
+#, python-format
+msgid ""
+"\n"
+"                            Assessment %(assessment_num)s:\n"
+"                        "
+msgstr ""
+"\n"
+"შეფასების %(assessment_num)s:\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
@@ -1116,6 +2469,50 @@ msgstr "სავარაუდო ქულები"
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
 msgstr "შეისწავლეთ პასუხების შეფასება"
+
+#: templates/legacy/student_training/student_training.html:27
+#, python-format
+msgid ""
+"\n"
+"                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
+"                  "
+msgstr ""
+"\n"
+"მიმდინარეობს (%(training_available_num)s %(current_progress_num)s)\n"
+"                  "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/student_training/student_training.html:38
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/student_training/student_training.html:45
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/student_training/student_training.html:58
+#: templates/legacy/student_training/student_training.html:66
+msgid "Learning to Assess Responses"
+msgstr "პასუხების შეფასების სწავლა"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -1170,6 +2567,10 @@ msgstr ""
 msgid "We could not check your assessment"
 msgstr "ვერ ვახერხებთ თქვენი პასუხის შეფასებას"
 
+#: templates/legacy/student_training/student_training.html:151
+msgid "Compare your selections with the instructor's selections"
+msgstr "შეადარეთ თქვენი არჩევანი ინსტრუქტორის არჩევანს"
+
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
 "The due date for this step has passed. This step is now closed. You can no "
@@ -1179,9 +2580,17 @@ msgstr ""
 "ამ საფეხურის საბოლოო ვადა ამოწურულია. ამჟამად ეს საფეხური დახურულია. თქვენ "
 "ვეღარ გააგრძელებთ ამ დავალებას და მიიღებთ არასრულ საბოლოო შეფასებას."
 
+#: templates/legacy/student_training/student_training_error.html:18
+msgid "Error Loading Learner Training Examples"
+msgstr "შეცდომა მოსწავლეთა ტრენინგის მაგალითების ჩატვირთვისას"
+
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
 msgstr "ამ დავალებისთვის ვერ მოხერხდა მსმენელის სწავლების საფეხურის ჩატვირთვა"
+
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "ღია პასუხის შეფასების ჩატვირთვა..."
 
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
@@ -1212,6 +2621,10 @@ msgstr "თანამშრომელთა კომენტარებ�
 msgid "Peer {peer_index}"
 msgstr "თანაკურსელები {peer_index}"
 
+#: xblock/grade_mixin.py:384
+msgid "Peer Comments"
+msgstr "თანატოლების კომენტარები"
+
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
 msgstr "თვითშეფასების ქულა"
@@ -1224,6 +2637,10 @@ msgstr "თქვენი თვითშეფასება"
 msgid "Your Comments"
 msgstr "თქვენი კომენტარები"
 
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "თანატოლების საშუალო შეფასება"
+
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
 msgstr "თანაკურსელთა საშუალო დონე"
@@ -1231,6 +2648,114 @@ msgstr "თანაკურსელთა საშუალო დონე"
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
 msgstr "სხვა სტუდენტების შეფასების მოლოდინში"
+
+#: xblock/grade_mixin.py:677
+msgid "The grade for this problem is determined by your Staff Grade."
+msgstr "ამ პრობლემის შეფასება განისაზღვრება თქვენი პერსონალის კლასით."
+
+#: xblock/grade_mixin.py:681
+msgid "The grade for this problem is determined by your Self Assessment."
+msgstr "ამ პრობლემის შეფასება განისაზღვრება თქვენი თვითშეფასებით."
+
+#: xblock/grade_mixin.py:687
+#, python-brace-format
+msgid ""
+"You have successfully completed this problem and received a "
+"{earned_points}/{total_points}."
+msgstr ""
+"თქვენ წარმატებით დაასრულეთ ეს პრობლემა და მიიღეთ "
+"{earned_points}/{total_points}."
+
+#: xblock/grade_mixin.py:695
+msgid ""
+"You have not yet received all necessary peer reviews to determine your final"
+" grade."
+msgstr ""
+"თქვენ ჯერ არ მიგიღიათ ყველა საჭირო თანატოლების მიმოხილვა თქვენი საბოლოო "
+"შეფასების დასადგენად."
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr ""
+"ამ პრობლემის შეფასება განისაზღვრება თქვენი თანატოლების შეფასების საშუალო "
+"ქულით."
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr ""
+"ამ პრობლემის შეფასება განისაზღვრება თქვენი თანატოლების შეფასების საშუალო "
+"ქულით."
+
+#: xblock/openassesment_template_mixin.py:66
+msgid "Peer Assessment Only"
+msgstr "მხოლოდ თანატოლების შეფასება"
+
+#: xblock/openassesment_template_mixin.py:67
+msgid "Self Assessment Only"
+msgstr "მხოლოდ თვითშეფასება"
+
+#: xblock/openassesment_template_mixin.py:68
+msgid "Staff Assessment Only"
+msgstr "მხოლოდ პერსონალის შეფასება"
+
+#: xblock/openassesment_template_mixin.py:69
+msgid "Self Assessment to Peer Assessment"
+msgstr "თვითშეფასება თანატოლების შეფასებამდე"
+
+#: xblock/openassesment_template_mixin.py:70
+msgid "Self Assessment to Staff Assessment"
+msgstr "თვითშეფასება პერსონალის შეფასებამდე"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "თქვენ არ შეგიძლიათ თქვენი გამოგზავნის აღდგენა."
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "მომხმარებელი არ არსებობს."
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "არ არსებობს წარდგენა გადატვირთვისთვის."
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "გამოგზავნის აღდგენა წარმატებით."
+
+#: xblock/rubric_reuse_mixin.py:62
+msgid "You must specify a block id from which to copy a rubric."
+msgstr ""
+"თქვენ უნდა მიუთითოთ ბლოკის იდენტიფიკატორი, საიდანაც უნდა დააკოპიროთ რუბრიკა."
+
+#: xblock/rubric_reuse_mixin.py:66
+msgid "Invalid block id."
+msgstr "არასწორი ბლოკის იდენტიფიკატორი."
+
+#: xblock/rubric_reuse_mixin.py:72
+#, python-brace-format
+msgid ""
+"No Open Response Assessment found in {course_id} with block id {block_id}"
+msgstr "არ არის ნაპოვნი ღია პასუხის შეფასება {course_id} ბლოკის ID {block_id}"
+
+#: xblock/staff_area_mixin.py:42
+msgid "You do not have permission to schedule training"
+msgstr "თქვენ არ გაქვთ ტრენინგის დაგეგმვის ნებართვა"
+
+#: xblock/staff_area_mixin.py:43
+msgid "You do not have permission to reschedule tasks."
+msgstr "თქვენ არ გაქვთ დავალებების გადადების ნებართვა."
+
+#: xblock/staff_area_mixin.py:69
+msgid "You do not have permission to access the ORA staff area"
+msgstr "თქვენ არ გაქვთ ORA-ს პერსონალის ზონაში წვდომის ნებართვა"
+
+#: xblock/staff_area_mixin.py:70
+msgid "You do not have permission to access ORA learner information."
+msgstr "თქვენ არ გაქვთ ORA-ს მოსწავლის ინფორმაციაზე წვდომის უფლება."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
@@ -1242,9 +2767,17 @@ msgstr ""
 msgid "Pending"
 msgstr "მომლოდინე"
 
+#: xblock/staff_area_mixin.py:242
+msgid "Complete/Overwritten"
+msgstr "დასრულებული/გადაწერა"
+
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
 msgstr "არ მიესადაგება"
+
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "არ არის წარმოდგენილი"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
@@ -1277,6 +2810,14 @@ msgstr ""
 msgid "Please enter valid reason to remove the submission."
 msgstr "გთხივთ შეიყვანოთ დავალების წაშლის საფუძვლიანი მიზეზი."
 
+#: xblock/staff_area_mixin.py:714
+msgid "Submission not found"
+msgstr "წარდგენა ვერ მოიძებნა"
+
+#: xblock/staff_area_mixin.py:725
+msgid "Submission for team assignment has no associated team submission"
+msgstr "გუნდის დავალებაზე წარდგენას არ აქვს ასოცირებული გუნდის წარდგენა"
+
 #: xblock/staff_area_mixin.py:754
 msgid ""
 "The learner submission has been removed from peer assessment. The learner "
@@ -1286,6 +2827,38 @@ msgstr ""
 "მოსწავლის ამოცანის პასუხი წაიშალა ურთიერთშეფასებებიდან. მოსწავლე მიიღებს "
 "ნულოვან შეფასებას, ვიდრე არ წაშლით მოსწავლის ამოცანის სტატუსს და არ მისცემთ "
 "მას ხელახლა გამოგზავნის საშუალებას."
+
+#: xblock/staff_area_mixin.py:789
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete a team member’s state for the problem to "
+"allow the team to resubmit a response."
+msgstr ""
+"გუნდის წარდგენა ამოღებულია შეფასებიდან. გუნდი მიიღებს ნულოვან შეფასებას, თუ "
+"არ წაშლით გუნდის წევრის მდგომარეობას პრობლემისთვის, რათა გუნდს საშუალება "
+"მისცეს ხელახლა წარადგინოს პასუხი."
+
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
+msgid "Error updating XBlock configuration"
+msgstr "შეცდომა XBlock კონფიგურაციის განახლება"
+
+#: xblock/studio_mixin.py:264
+msgid "Error: Text Response and File Upload Response cannot both be disabled"
+msgstr ""
+"შეცდომა: ტექსტის პასუხი და ფაილის ატვირთვის პასუხი არ შეიძლება გამორთოთ"
+
+#: xblock/studio_mixin.py:268
+msgid ""
+"Error: When Text Response is disabled, File Upload Response must be Required"
+msgstr ""
+"შეცდომა: როდესაც ტექსტური პასუხი გამორთულია, საჭიროა ფაილის ატვირთვის პასუხი"
+
+#: xblock/studio_mixin.py:271
+msgid ""
+"Error: When File Upload Response is disabled, Text Response must be Required"
+msgstr ""
+"შეცდომა: როდესაც ფაილის ატვირთვის პასუხი გამორთულია, საჭირო უნდა იყოს "
+"ტექსტური პასუხი"
 
 #: xblock/studio_mixin.py:295
 #, python-brace-format
@@ -1359,6 +2932,20 @@ msgstr ""
 "ურთიერთშეფასებაში მნიშვნელობა \"აუცილებელი ნიშანი\" უნდა იყოს დადებითი  "
 "რიცხვი."
 
+#: xblock/utils/validation.py:137
+msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
+msgstr ""
+"თანატოლების შეფასებისას, \"შეფასებული\" მნიშვნელობა უნდა იყოს დადებითი მთელი"
+" რიცხვი."
+
+#: xblock/utils/validation.py:141
+msgid ""
+"In peer assessment, the \"Must Grade\" value must be greater than or equal "
+"to the \"Graded By\" value."
+msgstr ""
+"თანატოლების შეფასებისას, \"უნდა შეფასდეს\" მნიშვნელობა უნდა იყოს უფრო მეტი "
+"ან ტოლი \"შეფასებული\" მნიშვნელობა."
+
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
 msgstr ""
@@ -1381,9 +2968,26 @@ msgid ""
 "released."
 msgstr "ამოცანის გაშვების შემდეგ შეფასებების რაოდენობის შეცვლა შეუძლებელია."
 
+#: xblock/utils/validation.py:169
+msgid ""
+"The assessment type cannot be changed after the problem has been released."
+msgstr "შეფასების ტიპი არ შეიძლება შეიცვალოს პრობლემის გათავისუფლების შემდეგ."
+
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+"თანატოლების შეფასების შეფასების სტრატეგია არ შეიძლება შეიცვალოს პრობლემის "
+"გამოქვეყნების შემდეგ."
+
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
 msgstr "შეფასების კრიტერიუმი არასწორია."
+
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "თქვენ უნდა მიაწოდოთ მინიმუმ ერთი მოთხოვნა."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
@@ -1405,6 +3009,11 @@ msgid "The number of criteria cannot be changed after a problem is released."
 msgstr ""
 "ამოცანის გაშვების შემდეგ, კრიტერიუმების რაოდენობის შეცვლა შეუძლებელია."
 
+#: xblock/utils/validation.py:243
+msgid "Criteria names cannot be changed after a problem is released"
+msgstr ""
+"კრიტერიუმების სახელების შეცვლა შეუძლებელია პრობლემის გამოქვეყნების შემდეგ"
+
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
 msgstr "ამოცანის გაშვების შემდეგ ვარიანტების რაოდენობის ცვლილება შეუძლებელია."
@@ -1416,6 +3025,10 @@ msgstr "ამოცანის გაშვების შემდეგ ქ
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
 msgstr "სტუდენტის ტრენინგი უნდა შეიცავდეს სულ მცირე ერთ მაგალითს . "
+
+#: xblock/utils/validation.py:369
+msgid "Leaderboard number is invalid."
+msgstr "ლიდერბორდის ნომერი არასწორია."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."

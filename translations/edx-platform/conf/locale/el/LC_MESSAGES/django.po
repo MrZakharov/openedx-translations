@@ -24,6 +24,7 @@
 # 
 # Translators:
 # Brian Smith, 2025
+# Dimitris Voudouris <dimitrisvoudouris@yahoo.co.uk>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -32,10 +33,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-09-19 00:44+0000\n"
 "PO-Revision-Date: 2025-11-17 07:23+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Greek (https://app.transifex.com/open-edx/teams/301281/el/)\n"
+"Last-Translator: Dimitris Voudouris <dimitrisvoudouris@yahoo.co.uk>, 2026\n"
+"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 "Language: el\n"
@@ -399,7 +400,7 @@ msgstr ""
 #, python-format
 msgid "Action Required: Activate your %(platform_name)s account"
 msgstr ""
-"Απαιτούμενη Ενέργεια: Ενεργοποιήστε το λογαριασμό σας στο %(platform_name)s"
+"Απαιτούμενη Ενέργεια: Ενεργοποιήστε τον λογαριασμό σας στο %(platform_name)s"
 
 #: common/templates/student/edx_ace/accountrecovery/email/body.html:10
 #: common/templates/student/edx_ace/accountrecovery/email/body.html:39
@@ -1009,6 +1010,10 @@ msgid ""
 msgstr ""
 "Φαίνεται ότι το e-mail {email_address} χρησιμοποιείται ήδη. Προσπαθήστε ξανά"
 " με διαφορετικό e-mail."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:64
+msgid "This email is already associated with an existing account"
+msgstr "Αυτό το email χρησιμοποιείται ήδη."
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py:72
 #, python-brace-format
@@ -1937,7 +1942,7 @@ msgstr "ΑΝΑΖΗΤΗΣΗ ΜΑΘΗΜΑΤΩΝ"
 #: lms/templates/dashboard.html:249
 #: lms/templates/registration/account_activation_sidebar_notice.html:16
 msgid "Activate your account!"
-msgstr "Ενεργοποιήστε το λογαριασμό σας!"
+msgstr "Ενεργοποιήστε τον λογαριασμό σας!"
 
 #: lms/templates/dashboard.html:257
 msgid "Course-loading errors"
@@ -2468,6 +2473,42 @@ msgstr "Αυτομελέτη"
 #: lms/templates/dashboard/_dashboard_course_resume.html:12
 msgid "Resume Course"
 msgstr "Επιστροφή στο υλικό μαθήματος"
+
+#: lms/templates/dashboard/_reason_survey.html:9
+msgid "I just wanted to browse the material"
+msgstr "Ήθελα μόνο να ρίξω μια ματιά"
+
+#: lms/templates/dashboard/_reason_survey.html:10
+msgid "This won't help me reach my goals"
+msgstr "Το μάθημα δεν με βοηθάει να πετύχω τους στόχους μου"
+
+#: lms/templates/dashboard/_reason_survey.html:11
+msgid "I don't have the time"
+msgstr "Δεν έχω τον απαραίτητο χρόνο"
+
+#: lms/templates/dashboard/_reason_survey.html:12
+msgid "I don't have the academic or language prerequisites"
+msgstr "Δεν έχω τις απαραίτητες γνώσεις για να παρακολουθήσω το μάθημα"
+
+#: lms/templates/dashboard/_reason_survey.html:13
+msgid "I don't have enough support"
+msgstr "Χρειαζόμουν περισσότερη υποστήριξη"
+
+#: lms/templates/dashboard/_reason_survey.html:14
+msgid "I am not happy with the quality of the content"
+msgstr "Δεν είμαι ικανοποιημένος από το περιεχόμενο του μαθήματος"
+
+#: lms/templates/dashboard/_reason_survey.html:15
+msgid "The course material was too hard"
+msgstr "Η ύλη του μαθήματος ήταν πολύ δύσκολη"
+
+#: lms/templates/dashboard/_reason_survey.html:16
+msgid "The course material was too easy"
+msgstr "Το μάθημα ήταν υπερβολικά εύκολο"
+
+#: lms/templates/dashboard/_reason_survey.html:17
+msgid "Something was broken"
+msgstr "Το μάθημα είχε τεχνικά προβλήματα"
 
 #: lms/templates/debug/run_python_form.html:16
 msgid "Results:"
@@ -3120,7 +3161,7 @@ msgid ""
 " account. Click on the link below or copy and paste it into your browser's "
 "address bar."
 msgstr ""
-"Ενεργοποιήστε το λογαριασμό σας στο {platform_name} πατώντας πάνω στο "
+"Ενεργοποιήστε τον λογαριασμό σας στο {platform_name} πατώντας πάνω στο "
 "σύνδεσμο που ακολουθεί ή αντιγράφοντάς τον στην γραμμή διευθύνσεων του "
 "φυλλομετρητή σας."
 
