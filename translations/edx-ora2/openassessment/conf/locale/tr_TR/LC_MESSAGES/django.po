@@ -6,6 +6,7 @@
 # 
 # Translators:
 # Brian Smith, 2025
+# Ali Işıngör <ali@artistanbul.io>, 2026
 # 
 msgid ""
 msgstr ""
@@ -13,8 +14,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-30 00:45+0000\n"
 "PO-Revision-Date: 2025-11-17 07:23+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/301281/tr_TR/)\n"
+"Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2026\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1754,6 +1755,23 @@ msgstr "Yanıtı sıfırlayıp tekrar gönderin"
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
 msgstr "Hata"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"\n"
+"                          Bu ödev için yanıt gönderdikten sonra %(team_name)s Ekibine katıldınız\n"
+"                          ve onların yanıtı için bir not almayacaksınız. Ayrıca daha önce göndermediniz\n"
+"                          bu göreve başka bir ekiple yanıt olarak. Lütfen durumunuzu görüşmek için ders personeliyle iletişime geçin.\n"
+"                          Bu görev için seçenekler.\n"
+"                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
